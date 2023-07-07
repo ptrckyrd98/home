@@ -1,7 +1,7 @@
 var data = {
   "english": {
     "welcome":
-      'Welcome to my portfolio ! To display the available commands type <code>help</code>. To validate each command press <em>Enter</em>, you can use the <em>Tab</em> key to help you complete a command.',
+      'Welcome to my portfolio ! To display the available commands type <code>help</code>. To validate each command press <em>Enter</em>, you can use the <em>Tab</em> key to help you complete a command. Note: This project still on progress!',
 
     "help": `<li><code>about-me</code>: Display information about me</li>
     <li><code>clear</code>: Clean the terminal</li>
