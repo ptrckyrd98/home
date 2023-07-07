@@ -119,7 +119,7 @@ icon.addEventListener('dblclick', function () {
   terminalBody.insertAdjacentHTML(
     'afterbegin',
     `
-          <div>Welcome to my portfolio ! To display the available commands type <code>help</code>. To validate each command press <em>Enter</em>, you can use the <em>Tabulation</em> key to help you complete a command.</div>
+          <div>Welcome to my portfolio ! To display the available commands type <code>help</code>. To validate each command press <em>Enter</em>, you can use the <em>Tab</em> key to help you complete a command. Note: This project still on progress!</div>
           <div id="terminal">
             <div>
               <p class="commande" id="answer${i}">ptrckyrd_x:~/portfolio$</p>
