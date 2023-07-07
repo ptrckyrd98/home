@@ -101,7 +101,7 @@ function logKey(e) {
 
   if (e.key === 'Tab') {
     if (y === -1) {
-      if (result[0] === 'g') {
+      if (result[0] === 'p') {
         input.value = 'Patrick\\ Oyardo/';
       }
       if (result[0] === 'c') {
@@ -110,7 +110,7 @@ function logKey(e) {
       if (result.includes('cd .')) {
         input.value = 'cd .secret';
       }
-      if (result.includes('cd g')) {
+      if (result.includes('cd p')) {
         input.value = 'cd Patrick\\ Oyardo/';
       }
       if (result[0] === 'c' && !result.includes(' ') && result[1] !== 'd') {
