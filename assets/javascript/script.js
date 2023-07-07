@@ -102,7 +102,7 @@ function logKey(e) {
   if (e.key === 'Tab') {
     if (y === -1) {
       if (result[0] === 'g') {
-        input.value = 'Guillaume\\ REYGNER/';
+        input.value = 'Patrick\\ Oyardo/';
       }
       if (result[0] === 'c') {
         input.value = 'cd ';
@@ -111,7 +111,7 @@ function logKey(e) {
         input.value = 'cd .secret';
       }
       if (result.includes('cd g')) {
-        input.value = 'cd Guillaume\\ REYGNER/';
+        input.value = 'cd Patrick\\ Oyardo/';
       }
       if (result[0] === 'c' && !result.includes(' ') && result[1] !== 'd') {
         input.value = 'clear';
@@ -134,50 +134,6 @@ function logKey(e) {
       if (result.includes('cd t')) {
         input.value = 'cd themes';
       }
-      if (result[0] === 'e') {
-        input.value = 'experiences';
-      }
-      if (
-        result.includes('mes-projets[') &&
-        !result.includes(']') &&
-        typeof result[12] !== 'undefined' &&
-        result[12].match(/\d/) &&
-        language === 'french'
-      ) {
-        input.value = `${result}]`;
-      }
-      if (
-        result.includes('my-projects[') &&
-        !result.includes(']') &&
-        typeof result[12] !== 'undefined' &&
-        result[12].match(/\d/) &&
-        language === 'english'
-      ) {
-        input.value = `${result}]`;
-      }
-      if (
-        result.includes('mes-projets') &&
-        !result.includes('mes-projets[') &&
-        language === 'french'
-      ) {
-        input.value = 'mes-projets[';
-      }
-      if (
-        result.includes('my-projects') &&
-        !result.includes('my-projects[') &&
-        language === 'english'
-      ) {
-        input.value = 'my-projects[';
-      }
-      if (result.includes('mes-projets[') || result.includes('my-projects[')) {
-        if (
-          result.includes(']') &&
-          !result.includes('.website') &&
-          result[13] === ']'
-        ) {
-          input.value = `${result.substr(0, 14)}.website`;
-        }
-      }
       if (result[0] === 'f') {
         input.value = 'formations';
       }
@@ -187,30 +143,14 @@ function logKey(e) {
       if (result.includes('get c')) {
         input.value = 'get cv';
       }
-      if (result.includes('get l')) {
-        input.value = 'get linkedin';
+      if (result.includes('e')) {
+        input.value = 'experiences';
       }
       if (result.includes('get g')) {
         input.value = 'get github';
       }
       if (result[0] === 'h') {
         input.value = 'help';
-      }
-      if (
-        result[0] === 'm' &&
-        result !== 'mes-projets' &&
-        !result.includes('mes-projets[') &&
-        language === 'french'
-      ) {
-        input.value = 'mes-projets';
-      }
-      if (
-        result[0] === 'm' &&
-        result !== 'my-projects' &&
-        !result.includes('my-projects[') &&
-        language === 'english'
-      ) {
-        input.value = 'my-projects';
       }
       if (result[0] === 'p') {
         input.value = 'passions';
@@ -338,59 +278,10 @@ function logKey(e) {
           getMeta();
         } else if (result === 'get instagram') {
           getInstagram();
-        } else if (result === 'get linkedin') {
-          getLinkedin();
         } else if (result === 'get github') {
           getGithub();
         } else if (result === 'passions') {
           hobby();
-        } else if (result === 'mes-projets' || result === 'my-projects') {
-          project();
-        } else if (
-          result === 'mes-projets[1].website' ||
-          result === 'my-projects[1].website'
-        ) {
-          website(result);
-        } else if (
-          result === 'mes-projets[2].website' ||
-          result === 'my-projects[2].website'
-        ) {
-          website(result);
-        } else if (
-          result === 'mes-projets[3].website' ||
-          result === 'my-projects[3].website'
-        ) {
-          website(result);
-        } else if (
-          result === 'mes-projets[4].website' ||
-          result === 'my-projects[4].website'
-        ) {
-          website(result);
-        } else if (
-          result === 'mes-projets[5].website' ||
-          result === 'my-projects[5].website'
-        ) {
-          website(result);
-        } else if (
-          result === 'mes-projets[6].website' ||
-          result === 'my-projects[6].website'
-        ) {
-          website(result);
-        } else if (
-          result === 'mes-projets[7].website' ||
-          result === 'my-projects[7].website'
-        ) {
-          website(result);
-        } else if (
-          result === 'mes-projets[8].website' ||
-          result === 'my-projects[8].website'
-        ) {
-          website(result);
-        } else if (
-          result === 'mes-projets[9].website' ||
-          result === 'my-projects[9].website'
-        ) {
-          website(result);
         } else if (result === 'secrets') {
           secrets();
         } else if (result === 'move') {
