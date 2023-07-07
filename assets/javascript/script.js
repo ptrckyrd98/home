@@ -9,8 +9,6 @@ let closeWindow = document.getElementsByClassName('banner-button-close')[0];
 let closeWindowPopup = document.getElementsByClassName(
   'banner-button-close'
 )[1];
-let btnPopup = document.getElementById('btn-design');
-let popup = document.getElementById('popup');
 let filter = document.getElementById('filter');
 let icon = document.getElementById('icon');
 const root = document.querySelector(':root');
