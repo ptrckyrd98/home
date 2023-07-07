@@ -23,8 +23,8 @@ const getCv = () => {
     `<p class="result cvresult">${data[language].cv}</p>`
   );
   const a = document.createElement('a');
-  a.href = 'ressources/CV -  Guillaume REYGNER.pdf';
-  a.setAttribute('download', 'CV -  Guillaume REYGNER.pdf');
+  // a.href = 'ressources/CV -  Guillaume REYGNER.pdf';
+  // a.setAttribute('download', 'CV -  Guillaume REYGNER.pdf');
   a.setAttribute('target', 'blank');
   a.click();
 };
