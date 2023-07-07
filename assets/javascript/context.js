@@ -22,6 +22,8 @@ var data = {
       &nbsp;&nbsp;&nbsp;"email": "patrickoyardo98@gmail.com",<br>
       &nbsp;&nbsp;&nbsp;"location" : "Parañaque City, Philippines"<br>
     }`,
+
+    "cv" : `Resume downloading ...`,
   },
 };
 
