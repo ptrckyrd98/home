@@ -1,8 +1,11 @@
 ## Termfolio
 
+![banner](https://github.com/ptrckyrd98/home/assets/77490559/c68e19ae-e050-4b3d-b888-98ce83a09787)
+
 ## Status
 
 I am currently using this as my default Portfolio.:sparkles:
+[see live here!](https://ptrckyrd98.github.io/home/)
 
 ## Codebase
 
