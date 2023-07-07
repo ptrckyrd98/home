@@ -120,9 +120,7 @@ function logKey(e) {
         input.value = 'list-secret';
       }
     } else if (y === 0) {
-      if (result[0] === 'a' && language === 'french') {
-        input.value = 'a-propos';
-      } else if (result[0] === 'a' && language === 'english') {
+      if (result[0] === 'a' && language === 'english') {
         input.value = 'about-me';
       }
       if (result[0] === 'c' && !result.includes(' ') && result[1] !== 'd') {
@@ -133,9 +131,6 @@ function logKey(e) {
       }
       if (result.includes('cd t')) {
         input.value = 'cd themes';
-      }
-      if (result[0] === 'f') {
-        input.value = 'formations';
       }
       if (result[0] === 'g') {
         input.value = 'get ';
