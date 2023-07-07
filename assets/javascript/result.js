@@ -51,6 +51,28 @@ const getGithub = () => {
   a.click();
 };
 
+const getMeta = () => {
+  terminal.insertAdjacentHTML(
+    'beforeend',
+    `<p class="result redirectresultMeta">${data[language].redirectMeta}</p>`
+  );
+  const a = document.createElement('a');
+  a.href = 'https://www.facebook.com/ptrckyrd13/';
+  a.setAttribute('target', 'blank');
+  a.click();
+};
+
+const getInstagram = () => {
+  terminal.insertAdjacentHTML(
+    'beforeend',
+    `<p class="result redirectresultInstagram">${data[language].redirectInstagram}</p>`
+  );
+  const a = document.createElement('a');
+  a.href = 'https://www.instagram.com/ptrckyrd_x/';
+  a.setAttribute('target', 'blank');
+  a.click();
+};
+
 const help = () => {
   terminal.insertAdjacentHTML(
     'beforeend',
