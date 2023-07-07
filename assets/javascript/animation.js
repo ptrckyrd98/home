@@ -101,8 +101,7 @@ const moveBg = (historic, result, y) => {
 window.addEventListener('click', function (event) {
   if (
     event.target === closeWindowPopup ||
-    event.target === filter ||
-    event.target === btnPopup
+    event.target === filter
   ) {
     popup.style.animation = 'fadeout 0.3s ease';
     filter.style.animation = 'fadeoutfilter 0.3s ease';

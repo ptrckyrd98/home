@@ -334,6 +334,10 @@ function logKey(e) {
           experiences();
         } else if (result === 'get cv') {
           getCv();
+        } else if (result === 'get meta') {
+          getMeta();
+        } else if (result === 'get instagram') {
+          getInstagram();
         } else if (result === 'get linkedin') {
           getLinkedin();
         } else if (result === 'get github') {
