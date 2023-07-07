@@ -10,13 +10,6 @@ const clear = () => {
   terminalBody.insertAdjacentHTML('afterbegin', `<div id="terminal"></div>`);
 };
 
-const experiences = () => {
-  terminal.insertAdjacentHTML(
-    'beforeend',
-    `<table class="result experienceresult">${data[language].experience}</table>`
-  );
-};
-
 const getCv = () => {
   terminal.insertAdjacentHTML(
     'beforeend',
@@ -29,10 +22,10 @@ const getCv = () => {
   a.click();
 };
 
-const getLinkedin = () => {
+const experiences = () => {
   terminal.insertAdjacentHTML(
     'beforeend',
-    `<p class="result redirectresultLinkedin">${data[language].redirectLinkedin}</p>`
+    `<p class="result redirectresultExperience">${data[language].redirectExperience}</p>`
   );
   const a = document.createElement('a');
   a.href = 'https://www.linkedin.com/in/patrickoyardo/';
@@ -89,69 +82,6 @@ const hobby = () => {
     'beforeend',
     `<p class="result hobbyresult">${data[language].hobby}</p>`
   );
-};
-
-const project = () => {
-  terminal.insertAdjacentHTML(
-    'beforeend',
-    `<div class="resultproject">
-          ${data[language].project}
-      </div>`
-  );
-};
-
-const website = (result) => {
-  terminal.insertAdjacentHTML('beforeend', `${data[language].website}`);
-  const a = document.createElement('a');
-
-  if (
-    result === 'mes-projets[1].website' ||
-    result === 'my-projects[1].website'
-  ) {
-    a.href = 'https://catshop-io.herokuapp.com/';
-  } else if (
-    result === 'mes-projets[2].website' ||
-    result === 'my-projects[2].website'
-  ) {
-    a.href = 'https://guillaume-rygn.github.io/Kata-Temple/';
-  } else if (
-    result === 'mes-projets[3].website' ||
-    result === 'my-projects[3].website'
-  ) {
-    a.href = 'https://scoreit-thp.herokuapp.com/';
-  } else if (
-    result === 'mes-projets[4].website' ||
-    result === 'my-projects[4].website'
-  ) {
-    a.href = 'https://guillaume-rygn.github.io/Monolith-Arena/';
-  } else if (
-    result === 'mes-projets[5].website' ||
-    result === 'my-projects[5].website'
-  ) {
-    a.href = 'https://guillaume-rygn.github.io/MyDarkTheme.JS/';
-  } else if (
-    result === 'mes-projets[6].website' ||
-    result === 'my-projects[6].website'
-  ) {
-    a.href = 'https://guillaume-rygn.github.io/EmojiFace/';
-  } else if (
-    result === 'mes-projets[7].website' ||
-    result === 'my-projects[7].website'
-  ) {
-    a.href = 'https://www.guillaumereygner.fr/';
-  } else if (
-    result === 'mes-projets[8].website' ||
-    result === 'my-projects[8].website'
-  ) {
-    a.href = 'https://www.goyoulearn.com/';
-  } else if (
-    result === 'mes-projets[9].website' ||
-    result === 'my-projects[9].website'
-  ) {
-    a.href = 'https://guillaume-rygn.github.io/FindHouse/';
-  }
-  a.setAttribute('target', 'blank');
-  a.click();
 };
 
 const ls = (y, result, secret) => {
