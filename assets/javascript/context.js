@@ -23,7 +23,7 @@ var data = {
       &nbsp;&nbsp;&nbsp;"contact" : "Find the secret folder :)"<br>
     }`,
 
-    "cv" : `Resume downloading ...`,
+    "cv" : `Resume downloading ... done!`,
 
     "hobby" : `{<br>
       &nbsp;&nbsp;&nbsp;"Sport": "Cycling",<br>
@@ -56,7 +56,7 @@ var data = {
     <div>about</div>
     <div>clear</div>
     <div>experiences</div>
-    <div>get CV</div>
+    <div>get cv</div>
     <div>get github</div>
     <div>get meta</div>
     <div>get instagram</div>
@@ -69,7 +69,7 @@ var data = {
     <div>about</div>
     <div>clear</div>
     <div>experiences</div>
-    <div>get CV</div>
+    <div>get cv</div>
     <div>get github</div>
     <div>get meta</div>
     <div>get instagram</div>
