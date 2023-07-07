@@ -149,6 +149,12 @@ function logKey(e) {
       if (result.includes('get g')) {
         input.value = 'get github';
       }
+      if (result.includes('get m')) {
+        input.value = 'get meta';
+      }
+      if (result.includes('get i')) {
+        input.value = 'get instagram';
+      }
       if (result[0] === 'h') {
         input.value = 'help';
       }
