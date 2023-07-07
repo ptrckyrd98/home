@@ -274,10 +274,10 @@ function logKey(e) {
 
       if (y === -1) {
         if (
-          result === 'guillaume reygner' ||
-          result === 'cd guillaume reygner' ||
-          result === 'cd guillaume\\ reygner/' ||
-          result === 'guillaume\\ reygner/' ||
+          result === 'patrick oyardo' ||
+          result === 'cd patrick oyardo' ||
+          result === 'cd patrick\\ oyardo/' ||
+          result === 'patrick\\ oyardo/' ||
           result === 'cd'
         ) {
           y++;
